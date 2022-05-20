@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Homepage</title>
+	<!-- <link rel="stylesheet" href="reset.css"> -->
 	<link href="styles.css" rel="stylesheet">
 
 </head>
@@ -14,12 +15,33 @@
 	    </ol>
 	</nav>
 
+	<p>Hello World</p>
+
+<div class="popup" onclick="myFunction()">Welcome to my assessment(click me)
+	<span class="popuptext" id="myPopup">Hello there</span>
+</div> 
+<script>
+	// When the user clicks on <div>, open the popup
+	function myFunction() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show");
+	}
+</script>
+
 	<content>
 		<h1>Welcome to this little website.</h1>
 		<!-- insert hello world here -->
 
-		<img src="https://pbs.twimg.com/profile_images/1267905793610772480/rks7KARB_400x400.jpg">
+		<img id="duck" src="https://www.boredpanda.com/blog/wp-content/uploads/2022/03/duck-jokes-cover_800.png">
+        <h2>How did you hear about us?</h2>
+		<form id="q1">
+		
+		<input id="ch1" type="checkbox">Google
+		<input id="ch2" type="checkbox">A Friend
+		<input id="ch3" type="checkbox">Other
 
+
+		</form>
 		<h2>Contact Us</h2>
 		<form id="contact">
 			Your name:
@@ -34,8 +56,15 @@
 		</form>
 
 	</content>
+<p>Welcome to my assessment webpage! Thank you so much for taking your time to visit this page! I hope you enjoy your time here and have an amazing rest of your day. </p>
 
-
+<h2>User this is what you are...</h2>
+<ul>
+	<li>Awesome</li>
+	<li>Amazing</li>
+	<li>Strong</li>
+	
+</ul>
 	<script src="about.js"></script>
 
 </body>
